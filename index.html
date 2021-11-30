@@ -212,7 +212,7 @@
                                 <div class="influencer-item__subtitle subtitle-info">Search for influencer</div>
                                 <h3 class="influencer-item__title title">More then 6570 influencer waiting for your offer</h3>
                                 <div class="influencer-item__text text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna</div>
-                                <div class="influencer-item__line line-info"></div>
+                                <div class="influencer-item__line"><span class="line-info"></span> </div>
                             </div>
                         </div>
                     </div>                    
@@ -244,25 +244,30 @@
                                     <form action="#" class="proposal-form">
                                         <div class="proposal__category">                                    
                                                 <label for="category" class="proposal-form__label">Select Category</label>                           
-                                            
-                                                <select name="category" id="category" class="proposal-form__select">
-                                                    <option value="shoutput & promotion">Shoutput & promotion</option>
-                                                    <option value="shoutput">Shoutput</option>
-                                                    <option value="promotion">Promotion</option>
-                                                </select>                                      
-                                            
+                                                <div class="category__select">
+                                                    <select name="category" id="category" class="proposal-form__select">
+                                                        <option value="shoutput & promotion">Shoutput & promotion</option>
+                                                        <option value="shoutput">Shoutput</option>
+                                                        <option value="promotion">Promotion</option>
+                                                    </select>
+                                                </div>                                   
                                         </div>
                                         <div class="proposal__quantity">                                   
                                                 <label for="quantity" class="proposal-form__label">Quantity</label>                                    
-                                                <select name="quantity" id="quantity" class="proposal-form__select">
-                                                    <option value="shoutput & promotion">2 Post, 5 Stories</option>
-                                                    <option value="shoutput">1 Post, 5 Stories</option>
-                                                    <option value="promotion">5 Stories</option>
-                                                </select>                                                                     
+                                                <div class="quantity__select">
+                                                    <select name="quantity" id="quantity" class="proposal-form__select">
+                                                        <option value="shoutput & promotion">2 Post, 5 Stories</option>
+                                                        <option value="shoutput">1 Post, 5 Stories</option>
+                                                        <option value="promotion">5 Stories</option>
+                                                    </select>
+                                                </div>                                                                                                                     
                                         </div>
                                         <div class="proposal__comment">                                    
-                                                <label for="comment" class="proposal-form__label">Comment</label>                                    
-                                                <textarea name="comment" id="comment" class="proposal-form__select" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna "></textarea>                                                       
+                                                <label for="comment" class="proposal-form__label">Comment</label>  
+                                                <div class="comment__textarea">
+                                                    <textarea name="comment" id="comment" class="proposal-form__select" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna "></textarea>                                                       
+
+                                                </div> 
                                         </div>                                      
                                     </form>
                                 </div>
@@ -271,7 +276,7 @@
                                 <div class="proposal-item__subtitle subtitle-info">Start Dealing</div>
                                 <h3 class="proposal-item__title title">Make a proposal or choose an offer</h3>
                                 <div class="proposal-item__text text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna </div>
-                                <div class="proposal-item__line line-info"></div>
+                                <div class="proposal-item__line"><span class="line-info"></span></div>
                             </div> 
                         </div>
                         
@@ -280,13 +285,18 @@
                 </div>
                 <!-- /.info__proposal -->
                 <div class="info__result">
-                    <div class="result-item">
-                        <div class="result-item__subtitle subtitle-info">See the result</div>
-                        <h3 class="result-item__title title">Enjoy the different!</h3>
-                        <div class="result-item__text text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna </div>
-                        <div class="result-item__line line-info"></div>
+                    <div class="result-contant">
+                        <div class="container container__result">
+                            <div class="result-item__body">
+                                <div class="result-item__subtitle subtitle-info">See the result</div>
+                                <h3 class="result-item__title title">Enjoy the different!</h3>
+                                <div class="result-item__text text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi vulputate nec amet purus mauris nibh. Neque, dictum urna </div>
+                                <div class="result-item__line"><span class="line-info"></span></div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="result-item">
+                    <div class="result-item__image">
                         <img src="img/block_03/02.png" alt="diagrams" class="result-item__img">
                     </div>
                 </div>
