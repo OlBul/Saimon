@@ -1544,7 +1544,12 @@ body.lock {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 20px 0;
+  margin: 0 -9px;
+}
+
+.find__button {
+  padding: 15px 9px;
+  width: 114px;
 }
 
 .find__link {
@@ -1553,12 +1558,7 @@ body.lock {
   text-align: center;
   color: rgba(111, 118, 77, 0.69);
   border: 1px solid rgba(111, 118, 77, 0.17);
-  width: 114px;
   padding: 10px 21px;
-  margin: 0 18px 15px 0;
-}
-.find__link:last-child {
-  margin: 0 0 15px 0;
 }
 .find__link:hover {
   color: #FFFFFF;
