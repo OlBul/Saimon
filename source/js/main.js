@@ -19,3 +19,33 @@ buttonMenu.addEventListener('click', () => {
 const menuMobile = () => {
 
 }
+
+// =====
+
+const headerLinks = querySelectorAll('.header__link[data-goto]');
+
+if ( headerLinks.length > 0) {
+    headerLinks.forEach (headerLink => {
+        headerLink.addEventListener('click', onHeaderLinkClick);
+    });
+
+    function onHeaderLinkClick(e) {
+        const headerLink = e.target;
+
+        if (headerLink.dataset.goto && document.querySelector(headerLink.dataset.goto)) {
+            const gotoBlock = document.querySelector(headerLink.dataset.goto);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+            
+            window.scrollTo({
+                top: gotoBlockValue,
+                behavior: 'smooth'
+            });
+            e.preventDefault();
+        }
+    }
+}
+
+/*let elem1 = '5';
+let elem2 = 10;
+
+console.log(elem1+++elem2);*/
