@@ -1886,6 +1886,9 @@ body.lock {
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.7);
 }
+.footer__link:hover {
+  color: #FFFFFF;
+}
 
 @media (max-width: 991.98px) {
   .influencer-item__line,
