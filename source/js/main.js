@@ -16,13 +16,14 @@ buttonMenu.addEventListener('click', () => {
     
 })
 
-const menuMobile = () => {
+/*const menuMobile = () => {
 
-}
+}*/
 
 // =====
 
-const headerLinks = querySelectorAll('.header__link[data-goto]');
+const headerLinks = document.querySelectorAll('.header__link[data-goto]');
+//console.log(headerLinks)
 
 if ( headerLinks.length > 0) {
     headerLinks.forEach (headerLink => {
