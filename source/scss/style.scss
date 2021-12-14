@@ -46,9 +46,9 @@ $md5: 479.98;
     body {
         font-family: Inter, sans-serif;
         font-weight: 500;
-        &.lock{
+        /*&.lock{
             overflow: hidden;
-        }        
+        }     */   
     }
 
     .text {   
@@ -1455,21 +1455,24 @@ $md5: 479.98;
     }
 
     @media (max-width: $md3 + px) {
-
+        body {
+            &.lock {
+                overflow: hidden;
+            }
+        }
         // === header ===
 
         .header__menu {
             &::before {
                 content: '';
-                position: fixed;
+                position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 80px;
                 background-color: #FFFFFF;
                 z-index: 9;
-            }         
-
+            } 
         }
         .header__logo {
             position: relative;
@@ -1489,20 +1492,12 @@ $md5: 479.98;
             padding: 80px 0 0 0;
             transform: translateY(-100%);            
             transition: 1s ease;
-            /*&::before {
-                content: '';
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 80px;
-                background-color: #FFFFFF;
-            }*/
+            overflow: auto;            
         }
 
         .header__list {
             display: block;   
-            margin: 0 0 50px 0;      
+            margin: 0 0 30px 0;      
         }
 
         .header__li {
@@ -1522,7 +1517,8 @@ $md5: 479.98;
         }
 
         .header__button {          
-            font-size: 18px;        
+            font-size: 18px; 
+            margin: 20px;       
         }
 
         .button__menu {
