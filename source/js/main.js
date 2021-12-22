@@ -3,6 +3,7 @@
 const buttonMenu = document.querySelector('.button__menu');
 const headerNav = document.querySelector('.header__nav');
 const body = document.querySelector('body');
+const linkActive = document.querySelectorAll('.header__link');
 
 buttonMenu.addEventListener('click', () => {
     buttonMenu.classList.toggle('_menu-active');
@@ -12,18 +13,19 @@ buttonMenu.addEventListener('click', () => {
         buttonMenu.innerHTML = 'Close';
     }else {
         buttonMenu.innerHTML = 'Menu';
-    }
-    
-})
+    }    
+});
 
-/*const menuMobile = () => {
-
-}*/
-
-// =====
+linkActive.forEach( (headerLink) => {
+    headerLink.addEventListener('click', () => {
+        buttonMenu.classList.remove('_menu-active');
+        headerNav.classList.remove('_active-nav');
+        body.classList.remove('lock');
+        buttonMenu.innerHTML = 'Menu';
+    })
+});
 
 const headerLinks = document.querySelectorAll('.header__link[data-goto]');
-//console.log(headerLinks)
 
 if ( headerLinks.length > 0) {
     headerLinks.forEach (headerLink => {
@@ -44,9 +46,21 @@ if ( headerLinks.length > 0) {
             e.preventDefault();
         }
     }
-}
+};
 
-/*let elem1 = '5';
-let elem2 = 10;
+// ========== arrow Up ===========================================================================================
+const arrowUp = document.querySelector('.arrow__up');
 
-console.log(elem1+++elem2);*/
+   window.addEventListener('scroll', () => {
+    if (window.scrollY > 700) {
+        arrowUp.classList.remove('arrow__up_hiden');
+      } else if (window.scrollY < 700) {
+        arrowUp.classList.add('arrow__up_hiden');
+      }
+  });  
+  
+   arrowUp.addEventListener('click', () => {
+      window.scrollTo(0,0);
+  });
+
+
